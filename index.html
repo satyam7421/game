@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactosemia Diagnosis Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Introductory Page -->
+    <div id="intro-page">
+        <h1>Welcome to the Galactosemia Diagnosis Simulator</h1>
+        <!-- Add a welcome image or banner related to Galactosemia -->
+        <img src="images/Banner.jpg" alt="Galactosemia Banner" class="banner-image">
+
+        <p>Guidelines:</p>
+        <ul>
+            <li>Answer the questions to the best of your ability.</li>
+            <li>You have 60 seconds to complete all questions.</li>
+            <li>Points will be awarded for correct answers.</li>
+        </ul>
+
+
+        
+        <form id="team-form">
+            <label for="team-name">Team Name:</label>
+            <input type="text" id="team-name" name="team-name" required>
+            <!-- Add an image to the Start Game button for better interactivity -->
+            <button type="button" onclick="startGame()" class="start-btn">
+                <img src="images/start.png" alt="Start Game">
+                
+            </button>
+        </form>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game-page" style="display:none;">
+        <h1>Galactosemia Diagnosis Simulator</h1>
+        <div id="score-section">
+            <h2>Score: <span id="score">0</span></h2>
+            <h2>Time Remaining: <span id="timer">60</span> seconds</h2>
+        </div>
+
+        <!-- Add an image or icon representing the question section -->
+        <img src="images/Galactosemia.jpg" alt="Question Icon" class="question-image">
+        
+        <div id="question"></div>
+        <div id="choices"></div>
+        <div id="result-text"></div>
+    </div>
+
+    <!-- Leaderboard Page -->
+    <div id="leaderboard-page" style="display:none;">
+        <h1>Leaderboard</h1>
+        <!-- Add a trophy or leaderboard image -->
+        <img src="images/trophy.jpg" alt="Leaderboard Trophy" class="trophy-image">
+        
+        <ul id="leaderboard"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+
